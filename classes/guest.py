@@ -1,2 +1,5 @@
 class Guest:
-    pass
+    
+    def __init__(self, guest):
+        self.guest = []
+        
