@@ -8,7 +8,6 @@ class TestGuest(unittest.TestCase):
     def setUp(self):
         self.guest = Guest('TJ', 100.00)
         self.room = Room('Smooth Room', 50.00, 3, 5.00)
-        self.song = Song('Ed Sheeran - Dive')
 
     def test_check_guest_name(self):
         self.assertEqual('TJ', self.guest.name)
@@ -19,4 +18,6 @@ class TestGuest(unittest.TestCase):
     def test_pay_entry_fee(self):
         self.guest.pay_entry_fee(self.room)
         self.assertEqual(95.00, self.guest.cash)
+
+        
 
