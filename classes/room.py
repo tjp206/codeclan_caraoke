@@ -29,4 +29,5 @@ class Room:
     def check_capacity(self):
         if self.guest_count > 3:
             return True
+        return False
     
